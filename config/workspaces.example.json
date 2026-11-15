@@ -1,0 +1,36 @@
+{
+  "_comment": "Example workspace profiles. Copy this file to config/workspaces.json (kept private, not committed) and edit it. ONLY apps listed here can be launched by Moyo (allowlist). Paths may use %ENV% variables. Music: a Spotify URI (right-click a playlist > Share > Copy Spotify URI).",
+  "coding": {
+    "label": "Coding mode",
+    "apps": [
+      {"name": "VS Code", "path": "%LOCALAPPDATA%\\Programs\\Microsoft VS Code\\Code.exe", "args": []},
+      {"name": "Windows Terminal", "path": "%LOCALAPPDATA%\\Microsoft\\WindowsApps\\wt.exe", "args": []}
+    ],
+    "urls": ["https://github.com/"],
+    "music": null
+  },
+  "business": {
+    "label": "Business mode",
+    "apps": [],
+    "urls": ["https://mail.google.com/", "https://calendar.google.com/"],
+    "music": null
+  },
+  "content": {
+    "label": "Content creation",
+    "apps": [],
+    "urls": ["https://www.tiktok.com/", "https://www.instagram.com/"],
+    "music": null
+  },
+  "study": {
+    "label": "Study",
+    "apps": [],
+    "urls": [],
+    "music": null
+  },
+  "general": {
+    "label": "General work",
+    "apps": [],
+    "urls": [],
+    "music": null
+  }
+}

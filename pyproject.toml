@@ -1,0 +1,36 @@
+[project]
+name = "moyo-ai"
+version = "0.1.0"
+description = "Moyo AI: Moyosore's personal AI executive assistant (local-first)"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "pydantic>=2.7",
+    "keyring>=25",
+    "google-genai>=1.0",
+    "edge-tts>=7.3.1",
+    "kokoro-onnx>=0.6.1",
+    "soundfile>=0.14.0",
+    "google-auth>=2.62.2",
+    "google-auth-oauthlib>=1.5.0",
+    "requests>=2.34.2",
+    "sounddevice>=0.5.6",
+    "vosk>=0.3.45",
+]
+
+[project.scripts]
+moyo = "moyo.__main__:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "httpx>=0.27"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["moyo"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

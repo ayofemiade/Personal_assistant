@@ -1,0 +1,21 @@
+# Private voice recordings and test outputs: never commit
+stage0/audio/
+stage0/*_results.json
+.venv/
+.playwright-mcp/
+# Personal database, backups and logs: never commit
+data/
+# Downloaded voice models (large binaries)
+models/
+__pycache__/
+.env
+# --- public-repo exclusions (personal / private / tooling) ---
+# editor / tool folders (any hidden directory)
+.*/
+.pytest_cache/
+*.pyc
+stage0/audio_v2/
+stage0/*.json
+config/workspaces.json
+docs/DECISIONS.md
+MOYO_AI_Discovery_Report.md
